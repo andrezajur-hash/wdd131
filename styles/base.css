@@ -1,0 +1,211 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF9F6;
+    color: #2D2D2D;
+}
+
+header {
+    background-color: #3B1C32;
+    color: #E2C299;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 4px solid #E2C299;
+}
+
+#course-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2rem 2rem 1rem 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A0F18;
+    padding: 1rem;
+    margin-block: 30px;
+}
+
+nav a { 
+    color: #E2C299;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+     }
+
+nav a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #E2C299;
+}
+
+main { 
+    max-width: 1000px; 
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #3B1C32;
+    font-size: 3rem;
+    border-bottom: 2px solid #E2C299;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 15px 15px 0px #F0E6E1;
+    transition: 0.3s;
+    height: fit-content;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 20px rgba(59, 28, 50, 0.2); 
+    border-color: #3B1C32;
+}
+
+.card h2 {
+    background-color: #3B1C32;
+    color: #E2C299;
+    margin: 0;
+    padding: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.card-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.profile-img {
+    float: right;
+    width: 160px;
+    height: auto;
+    margin: 0 0 15px 20px;
+    border: 2px solid #E2C299;
+    box-shadow: 5px 5px 0px #F0E6E1;
+}
+
+.location-section {
+    clear: both;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+
+.location-section h4 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #3B1C32;
+    margin-top: 0;
+}
+
+.location-section hr {
+    border: 0;
+    border-top: 1px solid #E2C299;
+    margin-bottom: 15px;
+    margin: 30px 0 15px 0;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.location-content p {
+    flex: 1;
+    margin: 0;
+}
+
+.profile-img {
+    float: right;
+    width: 160px;
+    margin: 0 0 15px 20px;
+}
+
+.location-content figure {
+    margin: 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.flag-img {
+    width: 100px; 
+    height: auto;
+    }
+
+.location-content figcaption {
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 5px;
+    color: #666;
+}
+
+
+.resources-list {
+    list-style-type: none;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.resources-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.resources-list li::before {
+    content: "•";
+    color: #3B1C32;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.resources-list a {
+    color: #3B1C32;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #E2C299;
+    transition: 0.3s;
+}
+
+.resources-list a:hover {
+    color: #BC6C25;
+}
+
+
+footer {
+    background-color: #1A0F18;
+    color: #E2C299;   
+    text-align: center;
+    padding: 3rem;
+    margin-top: 60px;
+}
+
+#lastModified {
+    display: block;
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}

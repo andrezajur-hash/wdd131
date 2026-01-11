@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Andreza Santana</title>
+    
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Andreza Santana. Home Page for course resources and personal profile.">
+    <meta name="author" content="Andreza Santana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scripture</a>
+            <a href="project/index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Andreza Santana</h1>
+
+        <div class="grid-container">
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-body">
+                <img src="images/perfil.jpg" alt="Profile photo of Andreza Santana" class="profile-img">
+                <p>My name is <strong>Andreza Santana</strong>. As a student in the Software Development program at BYU-Idaho, I am embracing the challenge of opening my mind to new technological horizons. I am discovering the power of code to solve complex problems and to build projects that are functional, well-organized, and clear.</p>
+                
+                <div class="location-section">
+                    <hr> <h4>Rio de Janeiro, RJ</h4>
+                    <div class="location-content">
+                        <figure>
+                            <img src="images/location.png" alt="Brazil flag icon inside a map pin" class="flag-img">
+                            <figcaption>From Brazil</figcaption>
+                        </figure>
+                        <p>A Carioca, I was born and raised in this city full of countless charms. For me, Rio de Janeiro is even more special for being home to the House of the Lord. Located under the watchful gaze of Christ the Redeemer, the Rio de Janeiro Temple was dedicated in May 2022.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Technologies</h2> <div class="card-body"> <p>This page was developed using core front-end technologies taught in the WDD 131 course.</p>
+                    <ul class="resources-list"> <li><strong>HTML5</strong> – Semantic structure</li>
+                        <li><strong>CSS3</strong> – Layout with Grid and Flexbox</li>
+                        <li><strong>JavaScript</strong> – Dynamic footer dates</li>
+        </ul>
+    </div>
+</section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andreza Santana – Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

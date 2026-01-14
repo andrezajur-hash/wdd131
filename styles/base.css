@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap');
-
 :root {
     --primary-color: #3B1C32;
     --accent-color: #E2C299;
@@ -152,18 +150,40 @@ h1 {
     display: block;
 }
 
-.resources-list li {
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
+.resources-list {
+    list-style: none;
+    padding: 0;
 }
 
-footer {
-    background-color: #1A0F18;
+.resources-list {
+    list-style: none; 
+    padding: 0;
+}
+
+.resources-list li {
+    margin-bottom: 12px;
+}
+
+.resources-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resources-list a:hover {
+    text-decoration: underline;
     color: var(--accent-color);
-    text-align: center;
-    padding: 2rem;
-    margin-top: 40px;
+}
+.resources-list li::before {
+    content: "• "; 
+    color: var(--primary-color); }
+    
+footer {
+background-color: #1A0F18;
+color: var(--accent-color);
+text-align: center;
+padding: 2rem;
+margin-top: 40px;
 }
 
 #lastModified {

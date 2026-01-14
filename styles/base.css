@@ -153,11 +153,7 @@ h1 {
 .resources-list {
     list-style: none;
     padding: 0;
-}
-
-.resources-list {
-    list-style: none; 
-    padding: 0;
+    margin: 0;
 }
 
 .resources-list li {
@@ -174,16 +170,13 @@ h1 {
     text-decoration: underline;
     color: var(--accent-color);
 }
-.resources-list li::before {
-    content: "• "; 
-    color: var(--primary-color); }
-    
+
 footer {
-background-color: #1A0F18;
-color: var(--accent-color);
-text-align: center;
-padding: 2rem;
-margin-top: 40px;
+    background-color: #1A0F18;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
 }
 
 #lastModified {

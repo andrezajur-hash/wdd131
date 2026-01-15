@@ -28,8 +28,9 @@ body {
 
 header {
     background-color: var(--primary-color);
-    border-bottom: 6px solid var(--accent-color);
-    text-align: center;}
+    border-bottom: 6px solid var(--accent-color); 
+    text-align: center;
+    color: #FFFFFF;}
 
 #course-title {
     display: block;

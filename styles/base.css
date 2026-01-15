@@ -35,14 +35,14 @@ header {
 }
 
 nav {
-    display: flex; /* Flexbox exigido [cite: 911] */
+    display: flex; 
     justify-content: space-around;
     background-color: var(--nav-bg);
     padding: 1rem;
 }
 
 nav a {
-    color: var(--accent-color); /* Dourado para alto contraste [cite: 1002] */
+    color: var(--accent-color); 
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--card-bg); /* Branco no hover para contraste total */
+    color: var(--card-bg); 
     text-shadow: 0 0 5px var(--accent-color);
 }
 
@@ -73,7 +73,7 @@ h1 {
 }
 
 .grid-container {
-    display: grid; /* CSS Grid exigido [cite: 914] */
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
@@ -109,7 +109,7 @@ h1 {
     width: 150px;
     height: auto;
     margin: 0 0 15px 20px;
-    border-radius: 8px; /* Borda elegante solicitada */
+    border-radius: 8px; 
     border: 1px solid var(--accent-color);
     box-shadow: 5px 5px 15px var(--shadow-color);
     transition: transform 0.3s ease;

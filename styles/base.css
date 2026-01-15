@@ -67,10 +67,13 @@ nav a {
 
 nav a:hover {
     color: var(--accent-color);
-    text-decoration: underline;
-    
-    
+    text-decoration: underline;}
+
+nav span, nav div {
+    color: var(--primary-color) !important;
 }
+
+
 
 main {
     max-width: 1000px;

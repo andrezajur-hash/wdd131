@@ -1,14 +1,15 @@
 
 :root {
     --primary-color: #2E5A1C;
-    --accent-color: #fce5c7;
     --bg-color: #F9F9F6;
     --text-color: #2D2D2D;
     --card-bg: #FFFFFF;
     --nav-bg: #2E5A1c;
     --shadow-color: #D1D1D1;
     --header-font: 'Playfair Display', serif;
-    --body-font: 'Montserrat', sans-serif;
+    --body-font: 'Montserrat', sans-serif;   
+    --accent-color: #E2C299; 
+
 }
 
 body {
@@ -52,8 +53,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--card-bg); 
-    text-shadow: 0 0 5px var(--accent-color);
+    color: #FFFFFF;
 }
 
 main {

@@ -109,7 +109,7 @@ h1 {
     width: 150px;
     height: auto;
     margin: 0 0 15px 20px;
-    border-radius: 8px; /* Borda elegante solicitada */
+    border-radius: 8px; 
     border: 1px solid var(--accent-color);
     box-shadow: 5px 5px 15px var(--shadow-color);
     transition: transform 0.3s ease;

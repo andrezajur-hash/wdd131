@@ -34,6 +34,10 @@ header {
     color: var(--white)
 }
 
+header h1 span#course-title {
+    color: var(--white) !important;
+}
+
 #course-title {
     display: block;
     color: var(--white) !important; 
@@ -51,7 +55,7 @@ nav {
 }
 
 nav a {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;

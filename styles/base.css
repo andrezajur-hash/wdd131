@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: var(--card-bg);
-    color: var(--primary-color);
+    color: var(#ffffff);
     padding: 1rem 0;
     text-align: center;
     border-bottom: 4px solid var(--accent-color);
@@ -38,22 +38,22 @@ header {
 nav {
     display: flex; 
     justify-content: space-around;
-    background-color: var(--nav-bg);
+    background-color: #2E5A1c;
     padding: 1rem;
 }
 
 nav a {
-    color: #ffffff; 
+    color: var(--accent-color); 
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ;
 }
 
 nav a:hover {
-    color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 main {
@@ -110,15 +110,9 @@ h1 {
     height: auto;
     margin: 0 0 15px 20px;
     border-radius: 8px; 
-    border: 1px solid var(--accent-color);
-    box-shadow: 5px 5px 15px var(--shadow-color);
-    transition: transform 0.3s ease;
+    transition: 0,3ms;   
 }
 
-.profile-img:hover {
-    transform: translateY(-5px);
-    box-shadow: 8px 8px 20px var(--shadow-color);
-}
 
 .location-section hr {
     border: 0;

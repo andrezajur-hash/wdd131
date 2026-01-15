@@ -50,14 +50,14 @@ nav {
     justify-content: space-around;
     gap: 30px;
     background-color: var(--white); 
-    padding: 1.2rem;
+    padding: 1.rem;
     box-shadow: 0 2px 5px var(--shadow-light); 
 }
 
 nav a {
     color: var(--primary-color) !important;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;

@@ -31,8 +31,7 @@ header {
     background-color: var(--primary-color);
     border-bottom: 6px solid var(--accent-color);
     text-align: center;
-    color: var(--white)
-}
+    color: var(--white);}
 
 header h1 span#course-title {
     color: var(--white) !important;
@@ -40,7 +39,7 @@ header h1 span#course-title {
 
 #course-title {
     display: block;
-    color: var(--white) !important; 
+    color: var(--white); 
     font-family: var(--header-font);
     padding: 2.5rem 1rem;
     font-size: 3rem;}
@@ -50,12 +49,12 @@ nav {
     justify-content: space-around;
     gap: 30px;
     background-color: var(--white); 
-    padding: 1.rem;
+    padding: 1rem; 
     box-shadow: 0 2px 5px var(--shadow-light); 
 }
 
 nav a {
-    color: var(--primary-color) !important;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
@@ -68,14 +67,8 @@ nav a {
 nav a:hover {
     color: var(--accent-color);
     text-decoration: underline;}
-
-nav span, nav div {
-    color: var(--primary-color) !important;
-}
-
-
-
-main {
+    
+    main {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;

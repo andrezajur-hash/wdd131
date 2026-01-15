@@ -108,7 +108,16 @@ h1 {
     float: right;
     width: 150px;
     height: auto;
-    margin: 0 0 10px 15px;
+    margin: 0 0 15px 20px; 
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+        transform: translateY(-5px);
+    box-shadow: 8px 8px 20px rgba(46, 90, 28, 0.2);
 }
 
 .location-section hr {

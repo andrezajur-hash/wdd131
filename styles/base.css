@@ -30,6 +30,7 @@ header {
     background-color: var(--primary-color);
     border-bottom: 6px solid var(--accent-color); 
     text-align: center;
+    font-size: 3rem;
     color: #FFFFFF;}
 
 #course-title {

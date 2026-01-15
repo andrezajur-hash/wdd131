@@ -5,7 +5,7 @@
     --bg-color: #F9F9F6;
     --text-color: #2D2D2D;
     --card-bg: #FFFFFF;
-    --nav-bg: #1B3611;
+    --nav-bg: #2E5A1c;
     --shadow-color: #D1D1D1;
     --header-font: 'Playfair Display', serif;
     --body-font: 'Montserrat', sans-serif;
@@ -35,14 +35,14 @@ header {
 }
 
 nav {
-    display: flex; /* Flexbox exigido [cite: 911] */
+    display: flex; 
     justify-content: space-around;
     background-color: var(--nav-bg);
     padding: 1rem;
 }
 
 nav a {
-    color: var(--accent-color); /* Dourado para alto contraste [cite: 1002] */
+    color: var(--accent-color); 
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--card-bg); /* Branco no hover para contraste total */
+    color: var(--card-bg); 
     text-shadow: 0 0 5px var(--accent-color);
 }
 
@@ -73,7 +73,7 @@ h1 {
 }
 
 .grid-container {
-    display: grid; /* CSS Grid exigido [cite: 914] */
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }

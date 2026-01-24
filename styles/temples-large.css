@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none; 
+    }
+
+    .navigation {
+        display: flex ;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        font-size: 1.1rem; 
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+    }
+}

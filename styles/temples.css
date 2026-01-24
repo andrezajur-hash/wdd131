@@ -11,20 +11,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .navigation {
     display: none;
     list-style: none;
-    padding: 0;
+    padding: 2rem 0;
     margin: 0;
     position: absolute;
-    top: 60px; 
+    top: 100px; 
     left: 0;
     width: 100%;
     background-color: #3f1d5e;
     z-index: 10;
-    transition: all 0.3s ease-in-out;
+    
 }
 
 .navigation.show {
@@ -52,10 +53,13 @@ header {
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    z-index: 20;
 }
 
 #menu::before { content: "☰"; }
-#menu.show::before { content: "❌"; }
+#menu.show::before { 
+    content: "\2715"; 
+    color: white; }
 
 main {
     max-width: 800px; 
@@ -66,7 +70,8 @@ main {
 
 main h1 {
     font-size: 2.5rem; 
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 .gallery {
@@ -74,7 +79,8 @@ main h1 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
-    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
     
 }
 

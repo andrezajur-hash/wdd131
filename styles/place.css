@@ -4,12 +4,9 @@
     --secondary-color: #a45d5d;
     --accent-color: #ffffff;
     --text-color: #2d3436;
-    --bg-color: #f5f6f7;
-    /* Movemos o rgba para uma variável para padronizar o tipo de cor */
     --card-bg: rgba(255, 255, 255, 0.85); 
     --font-heading: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
-}
+    --font-body: 'Montserrat', sans-serif;}
 
 body {
     font-family: var(--font-body);
@@ -49,8 +46,7 @@ section {
     margin: 1.5rem 1rem;
     padding: 1.5rem;
     background-color: var(--card-bg); 
-    border-top: 5px solid var(--secondary-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* RGBA é aceitável em sombras */
+    border-top: 5px solid var(--secondary-color);  
 }
 
 section h2 {

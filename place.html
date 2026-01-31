@@ -21,11 +21,15 @@
 
     <main>
         <div class="hero">
-            <picture>
-                <source srcset="images/petropolis-large.webp" media="(min-width: 700px)">
-                <img src="images/petropolis-small.webp" alt="View of the Imperial Museum in Petrópolis" width="500" height="300">
-            </picture>
-        </div>
+    <picture>
+        <source srcset="images/petropolis-large.webp" media="(min-width: 700px)">
+        <img src="images/petropolis-small.webp" 
+             alt="View of the Imperial Museum in Petrópolis" 
+             width="500" 
+             height="300" 
+             fetchpriority="high">
+    </picture>
+</div>
 
         <section class="data">
             <h2>Data</h2>

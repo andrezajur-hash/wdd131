@@ -1,45 +1,32 @@
+main { position: relative; width: 100%; }
 
+.hero img { height: 600px; }
 
+.data, .weather {
+    position: absolute;
+    width: 320px;
+    border-top: none;
+    border-left: 8px solid var(--secondary-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    background-color: var(--card-bg);
+}
 
-@media screen and (min-width: 768px) {
-    
-    #menu {
-        display: none; 
-    }
+.data { top: 80px; left: 5%; }
+.weather { bottom: 80px; right: 5%; top: auto; }
 
-    .navigation {
-        display: flex ;
-        position: static;         
-        flex-direction: row;     
-        width: auto;           
-        background-color: transparent; 
-    }
+/* Ícone ao lado do texto no desktop */
+section h2 {
+    flex-direction: row; 
+}
 
-    .navigation li {
-        margin-left: 1.5rem;
-    }
+.weather h2 .icon {
+    order: 0; 
+    width: 40px;
+}
 
-    .navigation a {
-        padding: 0.5rem 1rem;
-        font-size: 1.2rem; 
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    main {
-        max-width: 1000px; 
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px;
-        padding: 20px 0;
-    }
+/* O tracinho continua embaixo de ambos */
+section h2::after {
+    flex-basis: 100%;
+    margin-top: 15px;
 }

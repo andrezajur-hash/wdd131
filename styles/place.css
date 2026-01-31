@@ -17,12 +17,16 @@ body {
     margin: 0;
 }
 
-header {
+header, footer {
     background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 2rem 0;
-    text-align: center;
-    border-bottom: 6px solid var(--secondary-color);}
+    text-align: center;}
+
+header { padding: 2rem 0; border-bottom: 6px solid var(--secondary-color); }
+footer { padding: 2rem; border-top: 6px solid var(--secondary-color); }
+
+h1 { font-family: var(--font-heading); margin: 0; }
+
 
 .hero img {
     width: 100%;
@@ -35,59 +39,81 @@ section {
     padding: 1.5rem;
     background-color: var(--card-bg); 
     border-top: 5px solid var(--secondary-color);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
-.weather h2 {
+
+section h2 {
     display: flex;
-    flex-direction: column; 
+    flex-wrap: wrap; 
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-family: var(--font-heading);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section h2::after {
+    content: "";
+    flex-basis: 100%;       
+    width: 80px;           
+    height: 3px;           
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;   
+    border-radius: 2px;
 }
 
 .weather .icon {
     width: 50px;
-    height: auto;}
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    text-align: center;
-    padding: 2rem;
-    border-top: 6px solid var(--secondary-color);
+    height: auto;
+    order: 2;             
 }
 
-@media (min-width: 768px) {
-    main {
-        position: relative;
-        width: 100%;
-    }
+dl { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0.8rem; }
 
-    .hero img {
-        height: 600px; 
-    }
+dt { 
+    font-weight: bold; 
+    color: var(--primary-color); 
+    text-align: right; 
+    padding-right: 15px; }
+
+dd { margin: 0; }
+
+
+@media (min-width: 768px) {
+    main { 
+        position: relative; 
+        width: 100%; }
+
+    .hero img { height: 600px; }
 
     .data, .weather {
         position: absolute;
-        width: 300px;
-        background-color: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(10px); 
         box-shadow: 0 15px 35px rgba(0,0,0,0.2);
         border-top: none;
-        border-left: 8px solid var(--secondary-color);
-    }
+        border-left: 8px solid var(--secondary-color);}
 
-    .data { top: 60px; left: 5%; }
-    .weather { bottom: 60px; right: 5%; top: auto; }
+    .data { 
+        top: 60px;         
+        left: 5%; }
+
+    .weather { 
+        bottom: 60px; 
+        right: 5%; 
+        top: auto; }
 
     
-    .weather h2 {
-        flex-direction: row; 
-        justify-content: center;
-        gap: 15px;
-    }
+        
+    section h2 {
+    flex-direction: row;}   }
 
     .weather .icon {
-        width: 45px;
-    }
-}
+        order: 0;         
+        width: 45px;}
+
+

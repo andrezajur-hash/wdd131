@@ -139,5 +139,8 @@ dd {
    
     .weather h3::after {
         flex-basis: 40%;
+        margin: auto;
     }
+
+    
 }

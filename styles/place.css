@@ -137,6 +137,6 @@ dd {
 
    
     .weather h3::after {
-        flex-basis: 100%;
+        flex-basis: 40%;
     }
 }

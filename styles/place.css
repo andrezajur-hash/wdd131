@@ -1,10 +1,10 @@
 
 :root {
-    --primary-color: #1b3022;
-    --secondary-color: #a45d5d;
-    --accent-color: #ffffff;
-    --text-color: #2d3436;
-    --bg-color: #f5f6f7;
+    --primary-color: rgb(27, 48, 34);
+    --secondary-color: rgb(164, 93, 93);
+    --accent-color: rgb(255, 255, 255);
+    --text-color: rgb(45, 52, 54);
+    --bg-color: rgb(245, 246, 247);
     --card-bg: rgba(255, 255, 255, 0.85); 
     --font-heading: 'Cinzel', serif;
     --font-body: 'Montserrat', sans-serif;
@@ -36,6 +36,7 @@ footer {
 h1 { 
     font-family: var(--font-heading); 
     margin: 0; 
+    font-size: 2.5rem;
 }
 
 .hero img { 
@@ -44,34 +45,33 @@ h1 {
     object-fit: cover; 
 }
 
-section {
+section, .data, .weather {
     margin: 1.5rem 1rem;
     padding: 1.5rem;
     background-color: var(--card-bg); 
     border-top: 5px solid var(--secondary-color);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-section h2, section h3 {
+section h2, section h3, .data h3, .weather h3 {
     display: flex;
-    flex-wrap: wrap; 
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 5px;
     font-family: var(--font-heading);
     color: var(--primary-color);
     text-align: center;
     text-transform: uppercase;
+    font-size: 1.5rem; 
+    font-weight: bold;
 }
 
-section h2::after, section h3::after {
+section h2::after, section h3::after, .data h3::after, .weather h3::after {
     content: "";
-    flex-basis: 100%;
     width: 80px;           
     height: 3px;           
     background-color: var(--secondary-color);
-    margin: 10px auto 0;   
-    border-radius: 2px;
+    margin-top: 5px;
 }
 
 .weather .icon { 
@@ -102,19 +102,23 @@ dd {
         position: relative; 
         width: 100%; 
     }
+    
     .hero img { 
         height: 600px; 
     }
-
+    
     .data, .weather { 
         position: absolute; 
         width: 300px; 
-        backdrop-filter: blur(10px); }
-
+        backdrop-filter: blur(10px); 
+        margin: 0; 
+    }
+    
     .data { 
         top: 60px; 
         left: 5%; 
     }
+    
     .weather { 
         bottom: 60px; 
         right: 5%; 
@@ -124,7 +128,10 @@ dd {
         display: none; 
     }
 
-    section h3::before {
+    .weather h3::before {
         content: "⛅";
-        font-size: 1.5rem;}
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        
+    }
 }

@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petrópolis - The Imperial Summer Home</title>
+    <title>Petrópolis - The Imperial City</title>
     <meta name="description" content="Assignment for WDD 131: Country Page featuring Petrópolis, Brazil.">
     <meta name="author" content="Andreza Santana">
-    
     <link rel="stylesheet" href="styles/place.css">
-    
     <script src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +16,13 @@
     <header>
         <h1>Petrópolis - The Imperial Summer Home</h1>
     </header>
-
     <main>
         <div class="hero">
-    <picture>
-        <source srcset="images/petropolis-large.webp" media="(min-width: 700px)">
-        <img src="images/petropolis-small.webp" 
-             alt="View of the Imperial Museum in Petrópolis" 
-             width="500" 
-             height="300" 
-             fetchpriority="high">
-    </picture>
-</div>
-
+            <picture>
+                <source srcset="images/petropolis-large.webp" media="(min-width: 700px)" type="image/webp">
+                <img src="images/petropolis-small.webp" alt="Imperial Museum" width="500" height="300" fetchpriority="high">
+            </picture>
+        </div>
         <section class="data">
             <h2>Data</h2>
             <dl>
@@ -42,18 +34,16 @@
                 <dt>Demonym:</dt> <dd>Petropolitano</dd>
             </dl>
         </section>
-
         <section class="weather">
-    <h2>Weather <img src="images/weather-icon.svg" alt="Cloudy" class="icon"></h2>
-    <dl>
-        <dt>Temperature:</dt> <dd id="temp">10 °C</dd>
-        <dt>Conditions:</dt> <dd>Cloudy</dd>
-        <dt>Wind:</dt> <dd id="wind">5 km/h</dd>
-        <dt>Wind Chill:</dt> <dd id="windchill"></dd>
-    </dl>
-</section>
+            <h3>Weather <img src="images/weather-icon.svg" alt="Cloudy" class="icon"></h3>
+            <dl>
+                <dt>Temperature:</dt> <dd id="temp">10 °C</dd>
+                <dt>Conditions:</dt> <dd>Cloudy</dd>
+                <dt>Wind:</dt> <dd id="wind">5 km/h</dd>
+                <dt>Wind Chill:</dt> <dd id="windchill"></dd>
+            </dl>
+        </section>
     </main>
-
     <footer>
         <p>&copy;<span id="currentyear"></span> Andreza Santana - Rio de Janeiro 🇧🇷</p>
         <p id="lastModified"></p>

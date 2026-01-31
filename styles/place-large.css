@@ -32,3 +32,13 @@ main {
     top: auto;
 }
 
+
+.weather h2 {
+    flex-direction: row;    
+    justify-content: center;
+    gap: 15px;              
+}
+
+.weather .icon {
+    width: 45px;            
+}

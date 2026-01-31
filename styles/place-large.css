@@ -4,9 +4,7 @@ main {
 }
 
 .hero img {
-    height: 700px;
-    width: 100%;
-    object-fit: cover;
+    height: 600px; 
 }
 
 .data, .weather {

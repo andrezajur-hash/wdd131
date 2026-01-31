@@ -36,9 +36,7 @@ h1 {
 .hero img {
     width: 100%;
     height: auto;
-    display: block;
-    object-fit: cover;
-}
+    object-fit: cover;}
 
 section {
     margin: 2rem 1rem;

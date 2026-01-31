@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrópolis - The Imperial City</title>
+    <meta name="description" content="Assignment for WDD 131: Country Page featuring Petrópolis, Brazil.">
+    <meta name="author" content="Andreza Santana">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Petrópolis</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/petropolis-large.webp" media="(min-width: 700px)">
+                <img src="images/petropolis-small.webp" alt="View of the Imperial Museum in Petrópolis" width="500" height="300">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt> <dd>795.8 sq km</dd>
+                <dt>Population:</dt> <dd>278,881</dd>
+                <dt>Founded:</dt> <dd>March 16, 1843</dd>
+                <dt>Altitude:</dt> <dd>838 m</dd>
+                <dt>Climate:</dt> <dd>Humid Subtropical</dd>
+                <dt>Demonym:</dt> <dd>Petropolitano</dd>
+            </dl>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <dl>
+                <dt>Temperature:</dt> <dd id="temp">10 °C</dd>
+                <dt>Conditions:</dt> <dd>Cloudy</dd>
+                <dt>Wind:</dt> <dd id="wind">5 km/h</dd>
+                <dt>Wind Chill:</dt> <dd id="windchill"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Andreza Santana - Rio de Janeiro 🇧🇷</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

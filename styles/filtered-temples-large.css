@@ -3,7 +3,7 @@
     #menu { display: none; }
 
     .navigation {
-        display: flex t;
+        display: flex ;
         position: static;
         width: auto;
         flex-direction: row;

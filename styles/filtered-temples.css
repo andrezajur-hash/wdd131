@@ -3,7 +3,7 @@
     --white: #ffffff;
     --gray: #f9f9f9;
     --border: #ddd;
-}
+    --hover-bg-color: rgba(255, 255, 255, 0.2);}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -55,6 +55,12 @@ header {
     text-decoration: none;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigation a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--secondary-color);
+    transition: 0.3s;
 }
 
 main { padding: 1rem; text-align: center; }

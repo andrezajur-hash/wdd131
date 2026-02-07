@@ -1,18 +1,22 @@
 :root {
-    --primary: #3f1d5e;
-    --white: #ffffff;
-    --gray: #f9f9f9;
-    --border: #ddd;
-    --hover-bg-color: rgba(255, 255, 255, 0.2);}
+    --primary-color: #3f1d5e;
+    --secondary-color: #ffffff;
+    --accent-color: #d4af37;
+    --bg-color: #f9f9f9;
+    --border-color: #dddddd;
+    --hover-bg: rgba(255, 255, 255, 0.2);
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-header, footer, .navigation {
-    background-color: var(--primary);
-    color: var(--white);
+header, 
+footer, 
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 header {
@@ -23,16 +27,26 @@ header {
     position: relative;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 #menu {
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 2.5rem;
     cursor: pointer;
 }
 
-#menu::before { content: "☰"; }
-#menu.show::before { content: "\2715"; }
+#menu::before { 
+    content: "☰"; 
+}
+
+#menu.show::before { 
+    content: "\2715"; 
+}
 
 .navigation {
     display: none;
@@ -46,24 +60,44 @@ header {
     z-index: 10;
 }
 
-.navigation.show { display: flex; flex-direction: column; }
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+}
 
 .navigation a {
     display: block;
     padding: 1.2rem;
-    color: var(--white);
+    color: var(--secondary-color);
     text-decoration: none;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .navigation a:hover {
-    background-color: var(--hover-bg-color);
-    color: var(--secondary-color);
+    background-color: var(--hover-bg);
+    color: var(--accent-color);
     transition: 0.3s;
 }
 
-main { padding: 1rem; text-align: center; }
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 1.5rem 0;
+}
+
+#filter-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
 
 .gallery {
     display: grid;
@@ -73,16 +107,65 @@ main { padding: 1rem; text-align: center; }
 }
 
 .temple-card {
-    background-color: var(--gray);
-    border: 1px solid var(--border);
-    padding: 15px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--accent-color);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.temple-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.temple-card p {
+    margin: 5px 0;
+    font-size: 1.1rem;
 }
 
 .temple-card img {
     width: 100%;
-    height: auto;
+    height: 250px;
     aspect-ratio: 400 / 250;
     object-fit: cover;
+    margin-top: auto;
+    border-bottom: 3px solid var(--accent-color);
 }
 
-footer { padding: 1.5rem; margin-top: 2rem; text-align: center; }
+footer {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 0 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+}

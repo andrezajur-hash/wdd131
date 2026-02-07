@@ -86,15 +86,21 @@ function displayTemples(filteredList) {
     const gallery = document.querySelector(".gallery");
     gallery.innerHTML = ""; 
     
-    filteredList.forEach(temple => {
+    filteredList.forEach((temple, index) => {
         const card = document.createElement("section");
         card.classList.add("temple-card");
+        const loadingStrategy = index < 3 ? "eager" : "lazy";
+
         card.innerHTML = `
             <h3>${temple.templeName}</h3>
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
+            <img src="${temple.imageUrl}" 
+                 alt="${temple.templeName} Temple" 
+                 loading="${loadingStrategy}" 
+                 width="400" 
+                 height="250">
         `;
         gallery.appendChild(card);
     });

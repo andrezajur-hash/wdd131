@@ -1,0 +1,95 @@
+:root {
+    --primary-color: rgb(27, 48, 34);
+    --secondary-color: rgb(164, 93, 93);
+    --bg-color: rgb(245, 246, 247);
+    --form-bg: #d1ced5;
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.review-card {
+    background-color: var(--form-bg);
+    padding: 25px;
+    border: 1px solid #b1afb5;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+select, input[type="text"], input[type="date"], textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.stars label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    font-size: 0.85rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.submitBtn {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 15px;
+    background-color: #eeeeee;
+    border: 1px solid #888;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #dddddd;
+}

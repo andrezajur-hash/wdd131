@@ -88,10 +88,12 @@ main h1 {
 
 .card p {
     margin: 0 0 1.25rem;
-    font-size: 1rem;
-    line-height: 1.75;
+    font-size: 1.1rem;
+    line-height: 1.8;
     text-align: justify;
+    text-indent: 1.5rem;
 }
+
 
 .card p.rio-text {
     text-align: justify;
@@ -124,6 +126,14 @@ main h1 {
     float: left;
     margin: 0.25rem 1.5rem 0.75rem 0;
     text-align: center;
+}
+
+.location + p {
+    display: flow-root;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 1.5rem;
 }
 
 .location img {

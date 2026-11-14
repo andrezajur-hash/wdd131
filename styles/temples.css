@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +13,7 @@ body {
 
 header {
     background-color: #35477d;
-    color: white;
+    color: #ffffff;
     padding: 1.25rem 5%;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -27,7 +28,7 @@ header span {
 #menu {
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 1.6rem;
     cursor: pointer;
 }
@@ -39,7 +40,6 @@ nav {
     gap: 1.5rem;
 }
 
-
 nav.open {
     display: block;
 }
@@ -47,7 +47,7 @@ nav.open {
 nav a {
     display: block;
     padding: 0.75rem 1rem;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
 }
@@ -78,10 +78,10 @@ main h1 {
 }
 
 figure {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 12px #00000014;
 }
 
 figure img {
@@ -100,7 +100,7 @@ figcaption {
 
 footer {
     background-color: #35477d;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;

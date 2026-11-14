@@ -1,27 +1,27 @@
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f5f6f8;
     color: #263247;
-}
-
-header span {
-    font-size: 1.4rem;
-    font-weight: bold;
 }
 
 header {
     background-color: #35477d;
     color: white;
-    padding: 1.25rem;
+    padding: 1.25rem 5%;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+}
+
+header span {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 #menu {
@@ -34,9 +34,11 @@ header {
 
 nav {
     display: none;
-    grid-column: 1 / -1;
-    padding-top: 1rem;
+    grid-column: auto;
+    padding-top: 0;
+    gap: 1.5rem;
 }
+
 
 nav.open {
     display: block;
@@ -55,29 +57,31 @@ nav a:hover {
 }
 
 main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem 4rem;
+    width: 100%;
+    padding: 2.5rem 0 3.5rem;
 }
 
 main h1 {
     text-align: center;
     font-size: 2rem;
-    margin: 0 0 2.5rem;
+    margin-bottom: 2rem;
+    color: #35477d;
 }
 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.75rem;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 figure {
-    margin: 0;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
 figure img {
@@ -89,8 +93,9 @@ figure img {
 figcaption {
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
-    color: #35477d;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #263247;
 }
 
 footer {
@@ -98,6 +103,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
+    margin-top: 2rem;
 }
 
 footer p {

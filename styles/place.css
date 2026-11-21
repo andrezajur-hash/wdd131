@@ -146,3 +146,13 @@ footer p {
     object-position: center 60%;
 }
 }
+@media (max-width: 699px) {
+    .data p,
+    .weather p {
+        grid-template-columns: 125px 135px;
+        gap: 0.75rem;
+        width: 272px;
+        max-width: 100%;
+        margin: 0.75rem auto;
+    }
+}

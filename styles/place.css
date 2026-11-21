@@ -1,7 +1,7 @@
 :root {
     --header-footer-bg: #2E5247;
     --card-bg: #e0ded9;
-    --accent-color: #D5A76A;
+    --accent-color: #E2BC85;
     --text-dark: #1D2624;
     --text-light: #FAF8F3;
 }
@@ -32,14 +32,16 @@ header {
     text-align: center;
     padding: 1.25rem 1rem;
     border-bottom: 4px solid var(--accent-color);
+    
 }
 
 header h1 {
     margin: 0.67em 0;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
+    font-size: 3.5rem;
 }
 
 .hero img {

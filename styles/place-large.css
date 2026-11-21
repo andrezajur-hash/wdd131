@@ -17,15 +17,16 @@
         z-index: 10;
     }
 
-    .data,
-    .weather {
-        background-color: var(--card-bg-transparent);
-        border-radius: 8px;
-        border: 1px solid var(--accent-transparent);
-        box-shadow: 0 4px 15px var(--shadow-color);
-        backdrop-filter: blur(4px);
-        width: 300px;
-    }
+    
+.data,
+.weather {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 4px 15px #00000033;
+    width: 300px;
+}
+
 
     .weather img {
         display: none;

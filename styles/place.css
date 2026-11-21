@@ -1,13 +1,11 @@
+
 :root {
     --header-footer-bg: #0D3B4C;
     --card-bg: #F7F4EB;
     --accent-color: #D69E3D;
-    --text-dark: #1F2421;
     --text-light: #FFFFFF;
-    --card-bg-transparent: #F7F4EBEB;
-    --accent-transparent: #D69E3D66;
-    --shadow-color: #00000033;
 }
+
 
 *,
 *::before,
@@ -19,7 +17,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--card-bg);
-    color: var(--text-dark);
+    color: var(--header-footer-bg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

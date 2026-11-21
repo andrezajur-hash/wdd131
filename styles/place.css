@@ -53,6 +53,7 @@ header h1 {
 .weather {
     padding: 1.5rem;
     background-color: var(--card-bg);
+    
 }
 
 .data h2,

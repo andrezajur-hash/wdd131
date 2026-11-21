@@ -1,3 +1,4 @@
+
 @media (min-width: 800px) {
     main {
         position: relative;
@@ -17,16 +18,10 @@
         z-index: 10;
     }
 
-    
-.data,
-.weather {
-    background-color: var(--card-bg);
-    border-radius: 8px;
-    border: 1px solid var(--accent-color);
-    box-shadow: 0 4px 15px #00000033;
-    width: 300px;
-}
-
+    .data,
+    .weather {
+        width: 300px;
+    }
 
     .weather img {
         display: none;

@@ -1,11 +1,10 @@
-
 :root {
-    --header-footer-bg: #0D3B4C;
-    --card-bg: #F7F4EB;
-    --accent-color: #D69E3D;
-    --text-light: #FFFFFF;
+    --header-footer-bg: #2E5247;
+    --card-bg: #EAE3D5;
+    --accent-color: #D5A76A;
+    --text-dark: #1D2624;
+    --text-light: #FAF8F3;
 }
-
 
 *,
 *::before,
@@ -17,7 +16,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--card-bg);
-    color: var(--header-footer-bg);
+    color: var(--text-dark);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,6 +52,9 @@ header h1 {
 .weather {
     padding: 1.5rem;
     background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 4px 15px #0000001F;
 }
 
 .data h2,
@@ -85,18 +87,6 @@ header h1 {
 .weather img {
     display: block;
     margin: 0.5rem auto;
-}
-
-@media (max-width: 799px) {
-
-    .data p,
-    .weather p {
-        grid-template-columns: 110px 150px;
-        width: 276px;
-        max-width: 100%;
-        margin: 0.75rem auto;
-        transform: translateX(20px);
-    }
 }
 
 footer {

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil | Country Page</title>
+    <meta name="author" content="Andreza Santana">
+    <meta name="description"
+        content="A responsive country page about Brazil, developed by Andreza Santana for WDD 131 - Dynamic Web Fundamentals.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 800px)">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+
+                <img src="images/hero-small.webp"
+                    alt="Sugarloaf Mountain and a child on Botafogo Beach in Rio de Janeiro, Brazil" width="500"
+                    height="333" loading="eager">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 8,515,767 km²</p>
+            <p><strong>Population:</strong> 213 million</p>
+            <p><strong>Capital:</strong> Brasília</p>
+            <p><strong>Languages:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+            <p><strong>Time Zone:</strong> UTC−3 (Brasília)</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Partly cloudy icon" width="48" height="48" class="weather-icon">
+            <p><strong>Temperature:</strong> 28 °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 12 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Andreza Santana - Rio de Janeiro <span aria-hidden="true">🇧🇷</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

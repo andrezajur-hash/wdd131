@@ -1,0 +1,43 @@
+main {
+    position: relative;
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+}
+.data {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 10;
+}
+
+.weather {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    z-index: 10;
+}
+
+.data,
+.weather {
+    background-color: rgba(247, 244, 235, 0.92);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(214, 158, 61, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    width: 300px;
+}
+
+.weather img {
+    display: none;
+}
+
+.weather h2::after {
+    content: " ⛅";
+}

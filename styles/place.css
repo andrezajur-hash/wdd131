@@ -1,0 +1,114 @@
+:root {
+    --header-footer-bg: #0D3B4C;
+    --card-bg: #F7F4EB;
+    --accent-color: #D69E3D;
+    --text-dark: #1F2421;
+    --text-light: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: var(--header-footer-bg);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.25rem 1rem;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+header h1 {
+    margin: 0.67em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+}
+
+.data,
+.weather {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+}
+
+.data h2,
+.weather h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    color: var(--header-footer-bg);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.data p,
+.weather p {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 0.75rem auto;
+}
+
+.data strong,
+.weather strong {
+    text-align: right;
+    color: var(--header-footer-bg);
+}
+
+.weather img {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+footer {
+    background-color: var(--header-footer-bg);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.25rem 1rem;
+    border-top: 4px solid var(--accent-color);
+}
+
+footer p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 699px) {
+    .data p,
+    .weather p {
+        display: grid;
+        grid-template-columns: 110px 150px;
+        gap: 0.75rem;
+        width: 276px;
+        max-width: 100%;
+        margin: 0.75rem auto;
+        transform: translateX(20px);
+    }
+}

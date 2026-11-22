@@ -1,7 +1,7 @@
 
 :root {
     --header-footer-bg: #2E5247;
-    --card-bg: #e0ded9;
+    --card-bg: #FAF8F3;
     --accent-color: #E2BC85;
     --text-dark: #1D2624;
     --text-light: #FAF8F3;
@@ -54,9 +54,9 @@ header h1 {
 .weather {
     padding: 1.5rem;
     background-color: var(--card-bg);
-    border-radius: 8px;
-    border: 1px solid var(--accent-color);
-    box-shadow: 0 4px 15px #0000001F;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 3px 14px #0000001A;
 }
 
 .data h2,

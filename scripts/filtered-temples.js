@@ -119,9 +119,9 @@ function createTempleCards(templeList) {
         const image = document.createElement("img");
 
         name.textContent = temple.templeName;
-        location.textContent = `Location: ${temple.location}`;
-        dedicated.textContent = `Dedicated: ${temple.dedicated}`;
-        area.textContent = `Size: ${temple.area} sq ft`;
+        location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
+        dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+        area.innerHTML = `<strong>Size:</strong> ${temple.area} sq ft`;
 
         image.setAttribute("src", temple.imageUrl);
         image.setAttribute("alt", temple.templeName);

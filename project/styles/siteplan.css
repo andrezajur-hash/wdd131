@@ -61,7 +61,7 @@ section {
 section h2 {
     font-size: 2.4rem;
     font-weight: 600;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
     box-shadow: 0 3px 4px -2px var(--green);
 }
 
@@ -138,10 +138,7 @@ li::marker {
     margin: 0;
 }
 
-.wireframes figure:last-child {
-    width: 95%;
-    margin: 0 auto;
-}
+
 
 .wireframes img {
     width: 100%;
@@ -183,4 +180,14 @@ footer p {
     .heading-example {
         font-size: 2.3rem;
     }
+}
+header,
+section h2,
+.wireframes figure {
+    box-shadow: 0 3px 4px -2px var(--green);
+}
+
+.swatch,
+.wireframes figure {
+    border: 1px solid var(--green);
 }

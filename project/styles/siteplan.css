@@ -1,7 +1,12 @@
+
 :root {
     --white: #FFFFFF;
-    --black: #171717;
-    --heading-font: "Space Grotesk", sans-serif;
+    --red: #A04C5B;
+    --blue: #203B4B;
+    --gold: #D9A441;
+    --green: #A6B8AD;
+
+    --heading-font: "Cormorant Garamond", serif;
     --body-font: "DM Sans", sans-serif;
 }
 
@@ -12,55 +17,65 @@
 body {
     margin: 0;
     background-color: var(--white);
-    color: var(--black);
+    color: var(--blue);
     font-family: var(--body-font);
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 h1, h2, h3 {
     font-family: var(--heading-font);
+    color: var(--red);
 }
 
-header, footer {
-    background-color: var(--black);
-    color: var(--white);
+header {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    border-bottom: 4px solid var(--gold);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.8rem;
-    font-weight: 700;
-    letter-spacing: -1px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 header p {
-    margin: 0.5rem 0 0;
+    margin: 1rem 0 0;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 section h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    border-bottom: 1px solid var(--black);
+    font-size: 2.4rem;
+    font-weight: 600;
     padding-bottom: 0.5rem;
+    box-shadow: 0 3px 4px -2px var(--green);
 }
 
 section h3 {
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li::marker {
+    color: var(--red);
 }
 
 .color-palette {
@@ -75,22 +90,42 @@ section h3 {
 }
 
 .swatch {
-    height: 80px;
-    border: 1px solid var(--black);
+    height: 100px;
+    border: 1px solid var(--blue);
 }
 
 .white {
     background-color: var(--white);
 }
 
-.black {
-    background-color: var(--black);
+.red {
+    background-color: var(--red);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.gold {
+    background-color: var(--gold);
+}
+
+.green {
+    background-color: var(--green);
 }
 
 .heading-example {
     font-family: var(--heading-font);
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.body-example {
+    font-family: var(--body-font);
+    background-color: var(--green);
+    padding: 1.5rem;
 }
 
 .wireframes {
@@ -111,12 +146,41 @@ section h3 {
 .wireframes img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 figcaption {
     text-align: center;
-    font-family: var(--heading-font);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    background-color: var(--green);
+    color: var(--blue);
+}
+
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 4px solid var(--gold);
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .heading-example {
+        font-size: 2.3rem;
+    }
 }
